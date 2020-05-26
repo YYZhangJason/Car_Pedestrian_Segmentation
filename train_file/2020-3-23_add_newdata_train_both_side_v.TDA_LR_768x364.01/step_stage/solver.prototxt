@@ -1,0 +1,22 @@
+train_net: "/media/soterea/Data_ssd/work/YYZhang/train_file/2020-3-23_add_newdata_train_both_side_v.TDA_LR_768x364.01/step_stage/train.prototxt"
+test_net: "/media/soterea/Data_ssd/work/YYZhang/train_file/2020-3-23_add_newdata_train_both_side_v.TDA_LR_768x364.01/step_stage/test.prototxt"
+test_iter: 158
+test_interval: 1000
+base_lr: 3e-4
+momentum: 0.9
+momentum2: 0.999
+display: 50
+max_iter: 40000
+lr_policy: "fixed"
+weight_decay: 0.0001
+snapshot: 5000
+snapshot_prefix: "/media/soterea/Data_ssd/work/YYZhang/Train_restore/2020-3-23_add_newdata_train_both_side_v.TDA_LR_768x364.01/step_stage/BSD_train_stage_one_d-n"
+solver_mode: GPU
+device_id: 0
+random_seed: 33
+debug_info: false
+snapshot_after_train: true
+test_initialization: false
+iter_size: 1
+type: "Adam"
+
